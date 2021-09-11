@@ -4,10 +4,11 @@ const { build, ts, tsconfig, dirname, glob, log } = require('estrella');
 build({
   format: 'esm',
   target: ['esnext'],
+  external: ['react', 'react-dom'],
   entry: './src/ModalFlow.tsx',
   outfile: './build/ModalFlow.js',
   bundle: true,
-  minify: false,
+  minify: true,
   sourcemap: true,
   onEnd(config) {
     const dtsFilesOutdir = dirname(config.outfile);

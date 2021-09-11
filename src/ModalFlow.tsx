@@ -6,7 +6,7 @@
 /* eslint-disable guard-for-in */
 /* eslint-disable no-restricted-syntax */
 import * as React from 'react';
-import './styles.css';
+import './ModalFlow.css';
 
 export const ModalFlow = ({
   closeOnOutsideClick = false,
